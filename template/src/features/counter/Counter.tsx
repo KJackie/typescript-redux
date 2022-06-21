@@ -8,13 +8,13 @@ import {
   incrementAsync,
   incrementIfOdd,
   selectCount,
-} from './counterSlice';
+} from './counterSlice'; 
 import styles from './Counter.module.css';
 
 export function Counter() {
   const count = useAppSelector(selectCount);
   const dispatch = useAppDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+  const [incrementAmount, setIncrementAmount] = useState('3');
 
   const incrementValue = Number(incrementAmount) || 0;
 
